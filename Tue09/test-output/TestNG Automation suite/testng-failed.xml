@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Automation suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNG Automation test(failed)">
+    <classes>
+      <class name="testng.YagnaTest">
+        <methods>
+          <include name="linkTest"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testng.YagnaTest -->
+      <class name="testng.testNGFeatures">
+        <methods>
+          <include name="googleTitleTest"/>
+          <include name="googleTest"/>
+        </methods>
+      </class> <!-- testng.testNGFeatures -->
+    </classes>
+  </test> <!-- TestNG Automation test(failed) -->
+</suite> <!-- Failed suite [TestNG Automation suite] -->

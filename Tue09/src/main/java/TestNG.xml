@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Automation suite" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNG Automation test" verbose="2">
+    <classes>
+      <class name="testng.YagnaTest"/>
+      <class name="testng.AssertionTest"/>
+      <class name="testng.ExceptionTimeOutTest"/>
+      <class name="testng.InvocationCountTest"/>
+      <class name="testng.testngBasics"/>
+      <class name="testng.testNGFeatures"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
