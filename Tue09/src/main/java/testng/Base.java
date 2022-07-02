@@ -16,10 +16,15 @@ public class Base {
 		driver = new ChromeDriver();
 		driver.get("https://google.com");
 	}
-	public void failed() throws IOException {
+	public void failed() {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/home/ayushi/eclipse-workspace/Tue09/src/main/java/1.png"));
-		
+		try {
+		FileUtils.copyFile(src, new File("/home/ayushi/eclipse-workspace/Tue09/src/main/java/1Failed.png"));
+			
 	}
+	catch (IOException e) {
+		e.printStackTrace();
+	}
+	
 
-}
+}}

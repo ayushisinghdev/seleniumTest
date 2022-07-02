@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.softAssert">
+      <class name="testng.ScreenshotTest">
         <methods>
-          <include name="googleTitleTest1"/>
-          <include name="googleTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="takeScreenshotTest"/>
         </methods>
-      </class> <!-- testng.softAssert -->
+      </class> <!-- testng.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

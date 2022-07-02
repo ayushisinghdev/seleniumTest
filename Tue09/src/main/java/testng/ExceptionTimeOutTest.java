@@ -15,7 +15,7 @@ public class ExceptionTimeOutTest {
 //			int i = 1;
 //			while (i==1) {
 //				System.out.println("Test priority - Google title test");
-//			}}
+//		}}
 			
 	@Test(expectedExceptions = NumberFormatException.class,priority=1)
 	public void infiniteLoopTest2() {
